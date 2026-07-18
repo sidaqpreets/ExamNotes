@@ -25,13 +25,14 @@ const app = express()
 //   stripeWebhook
 // );
 
-app.use(cors(
-    {origin:"http://localhost:5173",
-        credentials:true,
-        methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
-    }
-))
-
+app.use(cors({
+    origin: [
+        "http://localhost:5173",
+        "https://exam-notes-ai-lovat.vercel.app"
+    ],
+    credentials: true,
+    methods: ["GET","POST","PUT","DELETE","OPTIONS"]
+}))
 
 
 app.use(express.json())
