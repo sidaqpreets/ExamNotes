@@ -8,7 +8,7 @@ import History from './pages/History'
 import Notes from './pages/Notes'
 import Pricing from './pages/Pricing'
 
-export const serverUrl = "http://localhost:8000"
+export const serverUrl = "https://examnotesai-3oiu.onrender.com/"
 
 function App() {
   const dispatch = useDispatch()
